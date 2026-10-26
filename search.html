@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Items | FOUNDLY</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">FOUNDLY</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Item</a>
+            <a href="search.html">Search Items</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </nav>
+
+
+    <!-- SEARCH HEADER -->
+    <section class="search-page">
+
+        <div class="search-heading">
+
+            <p class="small-title">FOUNDLY SEARCH</p>
+
+            <h1>Find Your Item</h1>
+
+            <p>
+                Search through lost and found reports from the community.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH BOX -->
+        <div class="search-panel">
+
+            <div class="main-search">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for an item..."
+                >
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="All"
+                >
+                    All Items
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Lost"
+                >
+                    Lost
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Found"
+                >
+                    Found
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ITEMS -->
+    <section class="search-results-section">
+
+        <div class="results-top">
+
+            <div>
+                <p class="results-small">
+                    COMMUNITY REPORTS
+                </p>
+
+                <h2>Lost & Found Items</h2>
+            </div>
+
+            <p id="resultCount">
+                0 items
+            </p>
+
+        </div>
+
+
+        <!-- JavaScript will put reports here -->
+        <div
+            class="search-items"
+            id="searchItems"
+        >
+        </div>
+
+
+        <!-- SHOWN IF NOTHING IS FOUND -->
+        <div
+            class="no-results"
+            id="noResults"
+        >
+
+            <div>🔎</div>
+
+            <h3>No items found</h3>
+
+            <p>
+                Try searching for something else
+                or report a missing item.
+            </p>
+
+            <a href="report.html">
+                Report an Item
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>FOUNDLY</h2>
+
+        <p>
+            Lost Things, Found Connections.
+        </p>
+
+        <p class="copyright">
+            © 2026 FOUNDLY
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

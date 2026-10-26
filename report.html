@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Item | FOUNDLY</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">FOUNDLY</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Item</a>
+            <a href="search.html">Search Items</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </nav>
+
+
+    <!-- REPORT PAGE -->
+    <section class="report-page">
+
+        <div class="report-heading">
+
+            <p class="small-title">FOUNDLY REPORT</p>
+
+            <h1>Report an Item</h1>
+
+            <p>
+                Lost something or found an item?
+                Fill out the information below to help
+                connect it with the right person.
+            </p>
+
+        </div>
+
+
+        <!-- FORM CARD -->
+        <div class="report-card">
+
+            <form id="reportForm">
+
+                <!-- LOST OR FOUND -->
+                <div class="form-group">
+
+                    <label>What would you like to report?</label>
+
+                    <div class="type-buttons">
+
+                        <label class="type-option">
+                            <input
+                                type="radio"
+                                name="reportType"
+                                value="Lost"
+                                required
+                            >
+
+                            <span>🔎 Lost Item</span>
+                        </label>
+
+
+                        <label class="type-option">
+                            <input
+                                type="radio"
+                                name="reportType"
+                                value="Found"
+                            >
+
+                            <span>✨ Found Item</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM NAME -->
+                <div class="form-group">
+
+                    <label for="itemName">
+                        Item Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="itemName"
+                        placeholder="Example: Black Backpack"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option>Bags</option>
+                        <option>School Supplies</option>
+                        <option>Electronics</option>
+                        <option>Identification Cards</option>
+                        <option>Clothing</option>
+                        <option>Accessories</option>
+                        <option>Keys</option>
+                        <option>Others</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe the item. You can include its color, brand, or other details."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Example: Near the school library"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DATE -->
+                <div class="form-group">
+
+                    <label for="date">
+                        Date Lost / Found
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="form-group">
+
+                    <label for="contact">
+                        Contact Information
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact"
+                        placeholder="Email, Messenger name, or contact number"
+                        required
+                    >
+
+                    <small class="form-note">
+                        Only provide contact information that you are comfortable sharing.
+                    </small>
+
+                </div>
+
+
+                <!-- PHOTO -->
+                <div class="form-group">
+
+                    <label for="photo">
+                        Item Photo
+                    </label>
+
+                    <div class="upload-box">
+
+                        <div class="upload-icon">📷</div>
+
+                        <p>
+                            Add a photo of the item
+                        </p>
+
+                        <input
+                            type="file"
+                            id="photo"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="submit-report"
+                >
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUCCESS MESSAGE -->
+
+    <div
+        class="success-message"
+        id="successMessage"
+    >
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Report Submitted!</h2>
+
+            <p>
+                Your item report has been submitted successfully.
+            </p>
+
+            <button onclick="closeMessage()">
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>FOUNDLY</h2>
+
+        <p>
+            Lost Things, Found Connections.
+        </p>
+
+        <p class="copyright">
+            © 2026 FOUNDLY
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

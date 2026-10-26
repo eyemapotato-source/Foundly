@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | FOUNDLY</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            FOUNDLY
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="report.html">
+                Report Item
+            </a>
+
+            <a href="search.html">
+                Search Items
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+
+        <p class="small-title">
+            ABOUT FOUNDLY
+        </p>
+
+        <h1>
+            Lost Things.<br>
+            <span>Found Connections.</span>
+        </h1>
+
+        <p>
+            FOUNDLY is a lost-and-found platform created
+            to make reporting, searching, and recovering
+            lost belongings easier for the school community.
+        </p>
+
+    </section>
+
+
+    <!-- ABOUT INFORMATION -->
+    <section class="about-section">
+
+        <div class="about-grid">
+
+
+            <!-- OUR PURPOSE -->
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🎯
+                </div>
+
+                <h2>Our Purpose</h2>
+
+                <p>
+                    Our goal is to provide one accessible
+                    place where people can report lost or
+                    found belongings and easily search for
+                    items that may belong to them.
+                </p>
+
+            </div>
+
+
+            <!-- HOW IT WORKS -->
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🔎
+                </div>
+
+                <h2>How It Works</h2>
+
+                <p>
+                    Users can report a lost or found item,
+                    provide its description, date and
+                    location, and search through reports
+                    to find possible matches.
+                </p>
+
+            </div>
+
+
+            <!-- SAFETY -->
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🛡️
+                </div>
+
+                <h2>Safe Connections</h2>
+
+                <p>
+                    FOUNDLY helps connect people who lost
+                    belongings with people who found them
+                    while encouraging users to only share
+                    contact information they are comfortable
+                    providing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT / MESSAGE SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-wrapper">
+
+
+            <!-- LEFT SIDE -->
+            <div class="contact-intro">
+
+                <p class="contact-small">
+                    CONTACT / HELP
+                </p>
+
+                <h2>
+                    Need Help?<br>
+                    Message Us.
+                </h2>
+
+                <p>
+                    Have a question, concern, or suggestion
+                    about FOUNDLY? Send us a message using
+                    the form and we'll be happy to hear
+                    from you.
+                </p>
+
+
+                <div class="contact-feature">
+
+                    <span>💬</span>
+
+                    <div>
+                        <h3>Questions</h3>
+                        <p>
+                            Ask us about using FOUNDLY.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-feature">
+
+                    <span>⚠️</span>
+
+                    <div>
+                        <h3>Report a Concern</h3>
+                        <p>
+                            Let us know about incorrect
+                            or inappropriate reports.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-feature">
+
+                    <span>💡</span>
+
+                    <div>
+                        <h3>Suggestions</h3>
+                        <p>
+                            Tell us how FOUNDLY can improve.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE FORM -->
+            <div class="message-card">
+
+                <h2>Send a Message</h2>
+
+                <p>
+                    Fill out the form below.
+                </p>
+
+
+                <form id="messageForm">
+
+
+                    <!-- NAME -->
+                    <div class="form-group">
+
+                        <label for="messageName">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="messageName"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="messageEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="messageEmail"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SUBJECT -->
+                    <div class="form-group">
+
+                        <label for="messageSubject">
+                            Subject
+                        </label>
+
+                        <select
+                            id="messageSubject"
+                            required
+                        >
+
+                            <option value="">
+                                Select a subject
+                            </option>
+
+                            <option value="Question">
+                                General Question
+                            </option>
+
+                            <option value="Concern">
+                                Report a Concern
+                            </option>
+
+                            <option value="Suggestion">
+                                Suggestion
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+
+                        <label for="messageText">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="messageText"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="send-message-btn"
+                    >
+                        Send Message
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE SENT POPUP -->
+    <div
+        class="success-message"
+        id="messageSuccess"
+    >
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Message Sent!</h2>
+
+            <p>
+                Thank you for contacting FOUNDLY.
+                Your message has been received.
+            </p>
+
+            <button onclick="closeMessageSuccess()">
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>FOUNDLY</h2>
+
+        <p>
+            Lost Things, Found Connections.
+        </p>
+
+        <p class="copyright">
+            © 2026 FOUNDLY
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
