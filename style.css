@@ -1146,4 +1146,54 @@ footer .copyright {
         height: 150px;
     }
 }
+/* =========================================
+   FOUNDLY - SEARCH PAGE CARD IMAGE FIX
+========================================= */
 
+.search-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    width: 100%;
+}
+
+.search-items .search-item {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.search-items .search-item .item-image {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.search-items .search-item .item-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .search-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    .search-items {
+        grid-template-columns: 1fr;
+    }
+
+    .search-items .search-item .item-image {
+        height: 190px;
+        min-height: 190px;
+    }
+}
