@@ -900,3 +900,81 @@ footer .copyright {
     background: #fce8f1;
     color: #a74778;
 }
+
+/* FIX: LOST AND FOUND OPTIONS */
+
+#reportForm {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e8e5f5;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(73, 68, 130, 0.08);
+}
+
+#reportForm input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    max-width: 18px;
+    margin: 0;
+    accent-color: #7776d9;
+    cursor: pointer;
+}
+
+#reportForm input[type="radio"] + label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#reportForm label {
+    color: #30304a;
+}
+
+#reportForm .form-group {
+    margin-bottom: 22px;
+}
+
+#reportForm .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+#reportForm input:not([type="radio"]):not([type="checkbox"]),
+#reportForm select,
+#reportForm textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #e8e5f5;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #30304a;
+}
+
+#reportForm input:focus,
+#reportForm select:focus,
+#reportForm textarea:focus {
+    outline: 2px solid #d9d4ff;
+    border-color: #7776d9;
+}
+
+#reportForm .submit-report {
+    width: 100%;
+    border-radius: 12px;
+    background: #7776d9;
+    color: #ffffff;
+}
+
+#reportForm .submit-report:hover {
+    background: #5c5bb8;
+}
+
+@media (max-width: 600px) {
+    #reportForm {
+        padding: 20px 16px;
+        margin: 0 12px;
+    }
+}
