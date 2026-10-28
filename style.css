@@ -5,6 +5,16 @@
 ================================== */
 
 :root {
+   .home-details-btn {
+    display: inline-block !important;
+    margin-top: 15px !important;
+    padding: 10px 18px !important;
+    background: #e879ad !important;
+    color: #ffffff !important;
+    border: 3px solid #d95791 !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+}
     --primary: #7776d9;
     --primary-dark: #5c5bb8;
     --pink: #f2a9cf;
