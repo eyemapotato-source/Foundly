@@ -1115,3 +1115,35 @@ footer .copyright {
         font-size: 14px;
     }
 }
+
+/* FOUNDLY - FIX SEARCH ITEM IMAGE SIZE */
+
+/* Keep report cards neat */
+#reportsContainer .report-card,
+#searchResults .report-card,
+.report-item {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Prevent images from becoming too large */
+#reportsContainer img,
+#searchResults img,
+.report-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Responsive images on mobile */
+@media (max-width: 600px) {
+    #reportsContainer img,
+    #searchResults img,
+    .report-item img {
+        height: 150px;
+    }
+}
+
