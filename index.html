@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FOUNDLY | Lost Things, Found Connections</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,7 +13,7 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- NAVIGATION -->
     <nav>
         <div class="logo">FOUNDLY</div>
 
@@ -23,13 +25,14 @@
         </div>
     </nav>
 
-
-    <!-- Main Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
 
         <div class="hero-content">
 
-            <p class="small-title">LOST & FOUND PLATFORM</p>
+            <p class="small-title">
+                LOST & FOUND PLATFORM
+            </p>
 
             <h1>
                 Lost Things,<br>
@@ -37,13 +40,13 @@
             </h1>
 
             <p class="description">
-                FOUNDLY makes it easier for students, teachers, and school staff
-                to report lost belongings and help return found items to their
-                rightful owners.
+                Lost something at school? FOUNDLY helps
+                students, teachers, and school staff report
+                missing belongings and find items that
+                have been turned in.
             </p>
 
             <div class="hero-buttons">
-
                 <a href="report.html" class="btn primary">
                     Report an Item
                 </a>
@@ -51,24 +54,19 @@
                 <a href="search.html" class="btn secondary">
                     Search Items
                 </a>
-
             </div>
 
         </div>
 
-
-        <!-- Decorative Card -->
         <div class="hero-card">
 
-            <div class="search-icon">
-                🔎
-            </div>
+            <div class="search-icon">🔎</div>
 
             <h2>Lost something?</h2>
 
             <p>
-                Search through reported items and see if someone
-                has already found what you're looking for.
+                Check the latest reports and see if someone
+                has already found your missing item.
             </p>
 
             <a href="search.html">
@@ -79,98 +77,56 @@
 
     </section>
 
-
-    <!-- Recent Reports -->
+    <!-- RECENT REPORTS -->
     <section class="recent">
 
-        <p class="section-small">FOUNDLY REPORTS</p>
+        <p class="section-small">
+            FOUNDLY REPORTS
+        </p>
 
         <h2>Recent Lost & Found Items</h2>
 
         <p class="section-description">
-            Browse some of the latest items reported by our community.
+            Check the latest items reported by our community.
         </p>
 
-
+        <!-- JavaScript displays reports here -->
         <div
-    class="item-container"
-    id="homeRecentItems"
->
-</div>
+            class="item-container"
+            id="homeRecentItems">
+        </div>
 
-<div
-    class="home-empty"
-    id="homeEmpty"
->
-    <div>📦</div>
+        <!-- Displayed when there are no reports -->
+        <div
+            class="home-empty"
+            id="homeEmpty">
 
-    <h3>No reports yet</h3>
+            <div>📦</div>
 
-    <p>
-        Lost or found something?
-        Be the first to submit a report.
-    </p>
+            <h3>No reports yet</h3>
 
-    <a href="report.html">
-        Report an Item
-    </a>
-</div>
+            <p>
+                Lost or found something?
+                Be the first to submit a report.
+            </p>
 
-<div class="view-all-container">
+            <a href="report.html">
+                Report an Item
+            </a>
 
-    <a
-        href="search.html"
-        class="view-all-btn"
-    >
-        View All Reports →
-    </a>
+        </div>
 
-</div>
-
-
-            <div class="item-card">
-
-                <div class="item-image">
-                    🪪
-                </div>
-
-                <span class="found-tag">FOUND</span>
-
-                <h3>School ID</h3>
-
-                <p>
-                    Found near the school cafeteria.
-                </p>
-
-                <small>October 21, 2026</small>
-
-            </div>
-
-
-            <div class="item-card">
-
-                <div class="item-image">
-                    ☂️
-                </div>
-
-                <span class="lost-tag">LOST</span>
-
-                <h3>Blue Umbrella</h3>
-
-                <p>
-                    Last seen inside one of the classrooms.
-                </p>
-
-                <small>October 20, 2026</small>
-
-            </div>
-
+        <div class="view-all-container">
+            <a
+                href="search.html"
+                class="view-all-btn">
+                View All Reports →
+            </a>
         </div>
 
     </section>
 
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
 
         <h2>FOUNDLY</h2>
@@ -183,8 +139,7 @@
 
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
