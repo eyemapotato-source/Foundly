@@ -1056,3 +1056,62 @@ footer .copyright {
 .report-page > p:last-of-type {
     max-width: 650px;
 }
+
+/* FOUNDLY - LOST AND FOUND TYPE OPTIONS */
+
+#reportForm .type-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+#reportForm .type-buttons .type-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 0;
+    min-height: 60px;
+    margin: 0;
+    padding: 14px 10px;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    background: var(--white);
+    color: var(--text);
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#reportForm .type-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: var(--primary);
+}
+
+#reportForm .type-option:has(input:checked) {
+    border-color: var(--primary);
+    background: #f0edff;
+    box-shadow: 0 4px 12px rgba(119, 118, 217, 0.15);
+}
+
+#reportForm .type-option:hover {
+    border-color: var(--primary);
+}
+
+@media (max-width: 420px) {
+    #reportForm .type-buttons {
+        gap: 10px;
+    }
+
+    #reportForm .type-buttons .type-option {
+        gap: 6px;
+        padding: 12px 6px;
+        font-size: 14px;
+    }
+}
