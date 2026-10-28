@@ -978,3 +978,49 @@ footer .copyright {
         margin: 0 12px;
     }
 }
+
+/* LOST AND FOUND OPTIONS SIDE BY SIDE */
+
+#reportForm .report-type-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 15px 0 25px;
+}
+
+#reportForm .report-type-options label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 12px;
+    border: 2px solid #e8e5f5;
+    border-radius: 14px;
+    background: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+#reportForm .report-type-options label:has(input:checked) {
+    border-color: #7776d9;
+    background: #f0edff;
+    color: #5c5bb8;
+}
+
+#reportForm .report-type-options input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #7776d9;
+}
+
+@media (max-width: 420px) {
+    #reportForm .report-type-options {
+        gap: 10px;
+    }
+
+    #reportForm .report-type-options label {
+        padding: 14px 6px;
+    }
+}
