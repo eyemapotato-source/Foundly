@@ -1024,3 +1024,35 @@ footer .copyright {
         padding: 14px 6px;
     }
 }
+<section class="report-page">
+    <p class="section-small">FOUNDLY REPORT</p>
+    <h1>Report an Item</h1>
+    <p>Lost something or found an item? Fill out the information below to help connect it with the right person.</p>
+</section>
+
+
+/* CENTER REPORT PAGE HEADING */
+
+.report-page {
+    text-align: center;
+}
+
+.report-page .section-small,
+.report-page .report-small {
+    text-align: center;
+}
+
+.report-page h1 {
+    text-align: center;
+    margin: 10px auto 15px;
+}
+
+.report-page > p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.report-page > p:last-of-type {
+    max-width: 650px;
+}
